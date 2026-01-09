@@ -8,7 +8,7 @@ export async function GET() {
     const db = client.db(); // Use the default database specified in the connection string
 
     const collections = await db.listCollections().toArray();
-    const collectionNames = collections.map(c => c.name);
+    const collectionNames = collections.map((c: any) => c.name);
 
     return NextResponse.json({ status: 'ok', collections: collectionNames });
   } catch (e) {

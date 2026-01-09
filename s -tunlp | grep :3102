@@ -1,0 +1,5 @@
+● trasys-server.service - Trasys Next.js Server
+     Loaded: loaded (/etc/systemd/system/trasys-server.service; enabled; vendor preset: enabled)
+     Active: activating (auto-restart) (Result: exit-code) since Fri 2026-01-09 09:51:45 KST; 5s ago
+    Process: 1871303 ExecStart=/root/.nvm/versions/node/v22.19.0/bin/yarn start -- -p 3102 [0;1;31m(code=exited, status=1/FAILURE)[0m
+   Main PID: 1871303 (code=exited, status=1/FAILURE)

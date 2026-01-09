@@ -1,0 +1,16 @@
+[Unit]
+Description=Trasys Next.js Server
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/home/es-dt23-04/Public/trasys
+Environment=PATH=/root/.nvm/versions/node/v22.19.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Environment=NODE_ENV=production
+Environment=PORT=3102
+ExecStart=/root/.nvm/versions/node/v22.19.0/bin/yarn start -- -p 3102
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
